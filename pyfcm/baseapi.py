@@ -1,5 +1,9 @@
 import os
 import requests
+import requests_toolbelt.adapters.appengine
+
+requests_toolbelt.adapters.appengine.monkeypatch()
+
 import json
 
 from .errors import *
